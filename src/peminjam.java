@@ -26,26 +26,39 @@ public class peminjam extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
+        email = new javax.swing.JLabel();
+        username = new javax.swing.JLabel();
+        password = new javax.swing.JLabel();
+        txtemail = new javax.swing.JTextField();
         background = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel1.setText("jLabel1");
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 100, -1, -1));
+        email.setText("email");
+        getContentPane().add(email, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 30, -1, -1));
 
-        jLabel2.setText("jLabel2");
-        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 140, -1, -1));
+        username.setText("username");
+        getContentPane().add(username, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 100, -1, -1));
 
-        jLabel3.setText("jLabel3");
-        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 180, -1, -1));
-        getContentPane().add(background, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 650, 500));
+        password.setText("password");
+        getContentPane().add(password, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 170, -1, -1));
+
+        txtemail.setText("jTextField1");
+        txtemail.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtemailActionPerformed(evt);
+            }
+        });
+        getContentPane().add(txtemail, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 20, 290, 40));
+        getContentPane().add(background, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 400, 300));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void txtemailActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtemailActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtemailActionPerformed
 
     /**
      * @param args the command line arguments
@@ -84,8 +97,9 @@ public class peminjam extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel background;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel email;
+    private javax.swing.JLabel password;
+    private javax.swing.JTextField txtemail;
+    private javax.swing.JLabel username;
     // End of variables declaration//GEN-END:variables
 }
